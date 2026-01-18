@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // jika data masih loading tampilkan loading indicator
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
-          // jika data sudah ada tampilkan list film
+      // jika data sudah ada tampilkan list film
           : ListView.builder(
         padding: const EdgeInsets.all(8),
         itemCount: movies.length,
@@ -123,6 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
+
             // ListTile untuk menampilkan data film
             child: ListTile(
               contentPadding: const EdgeInsets.all(10),
@@ -160,7 +161,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MovieDetailPage(movie),
+                    builder: (context) =>
+                        MovieDetailPage(movie),
                   ),
                 );
               },
@@ -197,6 +199,7 @@ class MovieDetailPage extends StatelessWidget {
               height: 220,
               fit: BoxFit.cover,
             ),
+
             // konten detail film
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -212,38 +215,40 @@ class MovieDetailPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 8),
+
                   // informasi film dengan icon
                   Row(
                     children: [
-                      Icon(Icons.person, size: 18),
-                      SizedBox(width: 6),
+                      const Icon(Icons.person, size: 18),
+                      const SizedBox(width: 6),
                       Text('Director: ${movie['director']}'),
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(Icons.business, size: 18),
-                      SizedBox(width: 6),
+                      const Icon(Icons.business, size: 18),
+                      const SizedBox(width: 6),
                       Text('Producer: ${movie['producer']}'),
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(Icons.calendar_today, size: 18),
-                      SizedBox(width: 6),
+                      const Icon(Icons.calendar_today, size: 18),
+                      const SizedBox(width: 6),
                       Text('Release Year: ${movie['release_date']}'),
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(Icons.star, size: 18, color: Colors.amber),
-                      SizedBox(width: 6),
+                      const Icon(Icons.star, size: 18, color: Colors.amber),
+                      const SizedBox(width: 6),
                       Text('Rating: ${movie['rt_score']}'),
                     ],
                   ),
 
-                  // deskripsi film
                   const SizedBox(height: 12),
+
+                  // deskripsi film
                   Text(
                     movie['description'],
                     textAlign: TextAlign.justify,
@@ -257,4 +262,3 @@ class MovieDetailPage extends StatelessWidget {
     );
   }
 }
-

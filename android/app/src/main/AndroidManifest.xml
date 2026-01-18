@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Izin akses internet karena aplikasi mengambil data dari REST API -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -17,23 +18,25 @@
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
 
+            <!-- Tema normal setelah Flutter selesai di-load -->
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
 
+            <!-- Activity utama aplikasi -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
 
+        <!-- Konfigurasi Flutter embedding -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-
     </application>
 
+    <!-- Diperlukan untuk Android 11+ (package visibility) -->
     <queries>
         <intent>
             <action android:name="android.intent.action.PROCESS_TEXT"/>

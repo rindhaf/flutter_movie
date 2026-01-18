@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "movies_list_flutter",
     "short_name": "movies_list_flutter",
+=======
+    "name": "flutter_movie",
+    "short_name": "flutter_movie",
+>>>>>>> 9bf2db09f0d9b78b3f2840565a080a457601a09b
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
