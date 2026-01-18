@@ -8,11 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-<<<<<<< HEAD
 import 'package:movies_list_flutter/main.dart';
-=======
-import 'package:flutter_movie/main.dart';
->>>>>>> 9bf2db09f0d9b78b3f2840565a080a457601a09b
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

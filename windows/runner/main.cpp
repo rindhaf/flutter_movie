@@ -27,11 +27,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(1280, 720);
-<<<<<<< HEAD
   if (!window.Create(L"movies_list_flutter", origin, size)) {
-=======
-  if (!window.Create(L"flutter_movie", origin, size)) {
->>>>>>> 9bf2db09f0d9b78b3f2840565a080a457601a09b
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

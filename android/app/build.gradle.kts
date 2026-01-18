@@ -6,11 +6,7 @@ plugins {
 }
 
 android {
-<<<<<<< HEAD
     namespace = "com.example.movies_list_flutter"
-=======
-    namespace = "com.example.flutter_movie"
->>>>>>> 9bf2db09f0d9b78b3f2840565a080a457601a09b
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -25,11 +21,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-<<<<<<< HEAD
         applicationId = "com.example.movies_list_flutter"
-=======
-        applicationId = "com.example.flutter_movie"
->>>>>>> 9bf2db09f0d9b78b3f2840565a080a457601a09b
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
